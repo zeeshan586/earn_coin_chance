@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('/src/components/assest/back.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  background-color: #101010;
+
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */

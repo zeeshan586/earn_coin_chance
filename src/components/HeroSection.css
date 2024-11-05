@@ -1,0 +1,106 @@
+.hero-section {
+  display: flex; /* Use flexbox to allow centering */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center;
+  color: #fff;
+  /* background-color: #121212; */
+  padding: 3rem 1rem;
+}
+
+.hero-section h1 {
+  font-size: 2rem; /* Adjust this to your desired size */
+  margin: 0; /* Remove margin around h1 */
+}
+
+.hero-section .first-line,
+.hero-section .second-line {
+  display: block; /* Ensure they stack */
+  margin: 0; /* Remove any margins */
+  padding: 0; /* Remove any padding */
+  font-size: 64px; /* If you want the size to be larger */
+  font-weight: 600; /* Maintain the desired weight */
+}
+
+.hero-section p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 24px;
+  color: #A6AAB2;
+}
+
+.counter-timer {
+  width: 463px; /* Set the width as specified */
+  height: 92px; /* Set the height as specified */
+  padding: 0px 20px; /* Adjust padding as needed */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Space the time components evenly */
+  align-items: center; /* Center the content vertically */
+  border-radius: 999px; /* Apply rounded corners */
+  gap: 0;
+  
+  /* Gradient border properties */
+  border: 1px solid #5235E8; /* Make sure border is transparent */
+  /* border-image-source: linear-gradient(180deg, #5235E8 0%, rgba(10, 124, 255, 0) 134.38%); Gradient source */
+  /* border-image-slice: 1; Use the entire gradient for the border */
+
+  /* Ensure no background color */
+  background-color: transparent; /* Set background to transparent */
+  opacity: 1; /* Ensure the timer is fully visible */
+  margin: 20px auto; /* Center the timer container and add some vertical spacing */
+}
+
+.time-component {
+  display: flex;
+  flex-direction: column; /* Stack digit and label vertically */
+  align-items: center; /* Center the text */
+}
+
+.digit {
+  font-size: 42px; /* Font size for the digits */
+  color: #ffffff; /* Digit color set to white */
+  font-weight: 500;
+  font-family: "Clash Display";
+}
+
+.label {
+  font-size: 14px; /* Font size for the labels */
+  color: #888888; /* Label color set to white */
+  font-weight: 500;
+  font-family: "Poppins";
+}
+
+.separator {
+  font-size: 2rem; /* Same size as digits for consistency */
+  margin: 0 0px; /* Spacing around separator */
+  color: #ffffff; /* Color for separator set to white */
+}
+
+.join-now {
+  background-color: #673ab7;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 1.5rem; /* Adjusted font size for smaller screens */
+  }
+
+  .counter-timer {
+    width: auto; /* Adjust width for smaller screens */
+  }
+
+  .countdown-timer {
+    font-size: 1rem; /* Smaller font for the countdown */
+  }
+
+  .join-now {
+    padding: 0.5rem 1.5rem; /* Adjusted padding for the button */
+  }
+}
